@@ -1,0 +1,21 @@
+{
+  "name": "green-calculator",
+  "version": "1.0.0",
+  "description": "A simple green color calculator with arithmetic operations, sales tax, and discount functionalities.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "calculator",
+    "green",
+    "sales tax",
+    "discount"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Green Calculator",
+      "program": "${workspaceFolder}/${input:programPath}",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "pickString",
+      "id": "programPath",
+      "description": "Select the entry point of your application",
+      "options": [
+        "green-calculator/src/app.js",
+        "green-calculator-1/src/app.js"
+      ]
+    }
+  ]
+}

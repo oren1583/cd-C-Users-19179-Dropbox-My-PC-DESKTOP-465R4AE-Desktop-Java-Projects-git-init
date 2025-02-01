@@ -1,4 +1,4 @@
-<!Coffee Shop Sales html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,16 +9,35 @@
 <body>
     <div class="calculator">
         <h1>Green Color Calculator</h1>
-        <input type="number" id="number1" placeholder="Enter first number">
-        <input type="number" id="number2" placeholder="Enter second number">
-        
-        <div class="buttons">
-            <button id="add">Add</button>
-            <button id="subtract">Subtract</button>
-            <button id="multiply">Multiply</button>
-            <button id="divide">Divide</button>
-            <button id="salesTax">Calculate Sales Tax</button>
-            <button id="discount">Apply Discount</button>
+        <input type="text" id="display" readonly>
+        <div>id= "keys"        
+        <div onclick="buttons">
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('**')">^</button>
+            <button onclick="appendToDisplay('sqrt')">sqrt</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="appendToDisplay('%')">%</button>
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="Calculate()">=</button>
+            <button onclick="cleardisplay()">C</button>
+
+            <button id="clear">C</button>
+            <button id="equals">=</button>
         </div>
         
         <div id="result" class="result"></div>
